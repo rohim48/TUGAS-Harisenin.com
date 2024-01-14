@@ -1,0 +1,440 @@
+body {
+    background: #1a2027;
+}
+.headnav {
+    font-family: "Euclid Circ.menuar A", "Poppins";
+    font-size: 18px;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    height: 10vh;
+    background: #1a2027;
+  }
+  
+.navlogo a {
+    position: left;
+    margin-right: 1500px;
+    padding-top: 15px;
+    display: flex;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.navname {
+    font-family: "Euclid Circ.menuar A", "Poppins";
+    font-size: 25px;
+    color: #fff;
+}
+
+div img {
+    width: 40px;
+    height: 40px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav {
+    width: 100%;
+}
+
+a {
+    cursor: pointer;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin-bottom: 30px;
+}
+
+.menu li {
+    display: inline-block;
+    width: 90px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu li:hover .submenu {
+    height: 85px;
+}
+
+.menu > li:hover > a {
+    color: #3e95ff;
+}
+
+.menu > li:hover > a::before {
+    visibility: visible;
+    scale: 1 1;
+}
+
+.submenu {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    background-color: #3e95ff;
+    height: 0;
+    line-height: 40px;
+    box-sizing: border-box;
+    transition: height 0.3s ease-in-out;
+}
+
+.menu li .submenu a {
+    color: #fff;
+    opacity: 0;
+    font-size: 16px;
+    transition: opacity 0.25s;
+}
+
+.menu > li:hover .submenu a {
+    opacity: 1;
+}
+
+.menu > li .submenu a:hover {
+    background: rgb(0 0 0 / 20%);
+}
+
+.menu > li a {
+    color: #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 7px;
+    text-decoration: none;
+    position: relative;
+    height: 100%;
+}
+
+.menu > li > a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 3px;
+    left: 0px;
+    background-color: #3e95ff;
+    transition: all 0.2s ease-in-out;
+    scale: 0 0;
+    visibility: hidden;
+}
+
+/* FORM LOGIN */
+.bio {
+    display: flex;
+    font-family: "Euclid Circular A", "Poppins";
+}
+
+.login-card {
+    position: relative;
+    z-index: 3;
+    width: 70%;
+    margin: 0 10px;
+    margin-top: 100px;
+    padding: 10px;
+    border-radius: 1.25rem;
+    background: #fff;
+    text-align: center;
+  }
+
+.login-card > h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 0 12px;
+    font-family: "Euclid Circular A", "Poppins";
+  }
+  
+  .login-card > h3 {
+    color: rgba(0, 0, 0, 0.38);
+    margin: 0 0 30px;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .login-form {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    margin-top: -50px;
+    margin-left: 50px;
+    padding: 50px;
+    gap: 16px;
+  }
+  
+  .login-form > input,
+  .login-form > button {
+    width: 70%;
+    height: 56px;
+  }
+  
+  .login-form > input {
+    border: 2px solid #ebebeb;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 0 16px;
+  }
+  
+  .login-form > button {
+    cursor: pointer;
+    width: 75%;
+    height: 56px;
+    padding: 0 16px;
+    border-radius: 0.5rem;
+    background: #216ce7;
+    color: #f9f9f9;
+    border: 0;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: all 0.375s;
+  }
+  
+  .login-form > a {
+    color: #216ce7;
+    font-size: 1rem;
+    text-align: left;
+    text-decoration: none;
+    margin-bottom: 6px;
+  }
+
+.biocard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75vw;
+    max-width: 1200px;
+    padding: 50px 20px 50px 10px;
+    background: #ffffff;
+    border-radius: 24px;
+    margin-top: 100px;
+    margin-bottom: -20px;
+    margin-left: 20px;
+}
+
+.bio .penj {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0 0 24px;
+    padding: 0;
+}
+
+.bio .penj var {
+    display: block;
+    font-style: normal;
+    font-size: 26px;
+}
+
+\\ CARD 
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background: #1a2027;
+    font-family: "Euclid Circular A", "Poppins";
+  }
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75vw;
+    max-width: 650px;
+    padding: 50px 30px 50px 20px;
+    background: #ffffff;
+    border-radius: 24px;
+    margin-top: 100px;
+    margin-bottom: -20px;
+    margin-left: 650px;
+}
+
+.card img {
+    max-width: 280px;
+    width: 32vw;
+    height: 270px;
+    object-fit: cover;
+    margin-left: -60px;
+    margin-right: 40px;
+    border-radius: inherit;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+.card h2 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.card .buttons {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.card button {
+    border: 1px solid #a7a7a7;
+    background: transparent;
+    color: #a7a7a7;
+    font-family: inherit;
+    padding: 16px 20px;
+    font-size: 18px;
+    border-radius: 6px;
+    min-width: 120px;
+}
+
+.card button.primary {
+    background: #fe5c89;
+    color: #f9f9f9;
+    border: 0;
+}
+
+.card .desc {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0 0 24px;
+    padding: 0;
+}
+
+.card .desc var {
+    display: block;
+    font-style: normal;
+    font-size: 26px;
+}
+
+/* FOOTER */
+  footer {
+    position: relative;
+    margin: 0 30px;
+    margin-top: 80px;
+    color: rgb(255 255 255 / 50%);
+    font-family: "Euclid Circular A", "Poppins";
+  }
+
+  footer.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    gap: 8px;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  footer h2 {
+    margin: 0 0 10px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(255 255 255 / 96%);
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  .legal > a {
+    margin: 0 0 0 4px;
+  }
+  
+  .legal,
+  .copyright {
+    font-size: 12px;
+  }
+  
+  .legal > span {
+    margin-right: 10px;
+  }
+  @media (width > 400px) {
+    .links-column {
+      text-align: left;
+    }
+  
+    footer.bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      gap: 20px;
+      text-align: left;
+    }
+  
+    footer.top > img {
+      margin: 0 0 50px;
+    }
+  }
+  
+  @media (width >= 640px) {
+    footer {
+      margin: 0 auto;
+      max-width: 580px;
+      padding: 0;
+    }
+  
+    footer.bottom {
+      justify-content: flex-start;
+    }
+  
+    .socials-column :is(h2, p) {
+      display: block;
+    }
+  }
+
+  /*  */
+@media (width <= 720px) {
+    .card {
+    margin: 0 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+}
+
+.card h2 {
+    font-size: 30px;
+}
+
+.card img {
+    margin: -100px 0 30px 0;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.card .desc var {
+    min-width: 90px;
+}
+
+.card button {
+    min-width: 160px;
+}
+}
+
+.card .desc {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0 0 24px;
+    padding: 0;
+}
+
+.card .desc var {
+    display: block;
+    font-style: normal;
+    font-size: 26px;
+}
